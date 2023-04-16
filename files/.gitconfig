@@ -1,0 +1,17 @@
+[user]
+	name = Peter L.
+	email = plix1014@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+[push]
+      default = simple
+[merge]
+      tool = kdiff3
+[difftool]
+      prompt = false
+[credential]
+	helper = store
+[credential "https://github.com"]
+	username = plix1014

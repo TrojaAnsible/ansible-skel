@@ -1,0 +1,13 @@
+---
+skel_dir: /etc/skel
+
+skel_files:
+  - .bash_aliases
+  - .bash_local
+  - .bashrc
+  - .gitconfig
+  - .profile
+
+platform_files:
+  - .vimrc
+

@@ -1,0 +1,25 @@
+---
+- name: Get type of running Linux
+  ansible.builtin.set_fact: 
+    unix_kind: "{{ ansible_distribution | lower | replace(' ', '-') }}"
+
+
+- name: Copy files to {{ skel_dir }}
+  ansible.builtin.copy:
+    src: "{{ item }}"
+    dest: "{{ skel_dir }}"
+    owner: root
+    group: root
+    mode: 0644
+  with_items: "{{ skel_files }}"
+
+
+- name: Copy platform files to {{ skel_dir }}
+  ansible.builtin.copy:
+    src: "{{ item }}.{{ unix_kind }}"
+    dest: "{{ skel_dir }}"
+    owner: root
+    group: root
+    mode: 0644
+  with_items: "{{ platform_files }}"
+
