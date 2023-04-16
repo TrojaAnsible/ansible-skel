@@ -1,0 +1,4 @@
+
+logfile /var/log/screen-%S-%n.log
+deflog on
+

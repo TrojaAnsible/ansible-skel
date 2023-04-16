@@ -55,6 +55,3 @@ if [ -f "/usr/bin/docker" ]; then
 fi
 
 
-# direnv
-eval "$(direnv hook bash)"
-
