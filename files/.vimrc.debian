@@ -100,6 +100,8 @@ imap <F3> q<CR>
 
 map <F4> :call Fxxd()<CR>
 
+map <F5> gqap
+
 cmap <F8> w ! cat - >~/p<CR>
 
 nmap <F9> :r ~/p<CR>
