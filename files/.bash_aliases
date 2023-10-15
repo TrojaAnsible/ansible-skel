@@ -1,5 +1,10 @@
 #
 
+# linux - dietpi
+if [ -f "/boot/dietpi.txt" ]; then
+    alias more="more -e"
+fi
+
 # youtube download alias
 alias youtube-dl='youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail $@'
 
