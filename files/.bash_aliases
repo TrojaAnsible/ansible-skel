@@ -1,7 +1,7 @@
 #
 
-# linux - dietpi
-if [ -f "/boot/dietpi.txt" ]; then
+# linux - debian >= 12
+if [ $(more --help|grep -c "\-e") -eq 1 ]; then
     alias more="more -e"
 fi
 
