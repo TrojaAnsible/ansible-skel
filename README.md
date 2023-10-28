@@ -10,9 +10,11 @@ Requirements
 Role Variables
 --------------
 
-* skel_dir       ... default location of the unix skeleton directory
-* skel_files     ... all files, which should be copied
-* platform_files ... files, for which you provide platform depended versions
+| defaults variable | description |
+|-------------------|-------------|
+| skel_dir       |default location of the unix skeleton directory|
+| skel_files     |all files, which should be copied|
+| platform_files |files, for which you provide platform depended versions|
 
 
 Dependencies

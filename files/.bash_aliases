@@ -1,5 +1,10 @@
 #
 
+# linux - debian >= 12
+if [ $(more --help|grep -c "\-e") -eq 1 ]; then
+    alias more="more -e"
+fi
+
 # youtube download alias
 alias youtube-dl='youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail $@'
 
